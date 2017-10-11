@@ -5,7 +5,7 @@ Angular JS Time Picker that loads inline of the page rather than modal. It is li
 Angular JS<br>
 Moment JS
 ## INSTALLATION
-Installing thi time picker is very easy. Just you need bower installed in your project. Then install it using bower like this: 
+Installing the time picker is very easy. Just you need bower installed in your project. Then install it using bower like this: 
 
 > yourProjectDirectory> bower install mahdi-time-picker [--save]
 
