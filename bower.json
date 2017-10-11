@@ -1,0 +1,16 @@
+{
+  "name": "mahdi-time-picker",
+  "description": "Inline Time Picker in AngularJS",
+  "main": "",
+  "keywords": [
+    "timepicker",
+    "inline-time-picker",
+    "angular",
+    "timepicker"
+  ],
+  "authors": [
+    "Mahdi Hasan"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}
