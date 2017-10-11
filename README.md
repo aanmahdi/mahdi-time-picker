@@ -24,7 +24,7 @@ There will be time showing box with clock icon. Clicking on clock makes the pick
 After selecting the time you need to Click on Change button. Selected time will be returned in your ng-model attribute.
 
 ## Option
-You may pass the parameter for your desired time format e.g.- hours/minutes/seconds, hours/minutes AM , etc using time-format attribute like this:<br>
+You may pass the parameter for your desired time format e.g.- hours/minutes/seconds, hours/minutes AM , etc using time-format attribute like this:
 > <mahdi-time-picker ng-model="returnedTime" time-format="'hh:mm A'"></mahdi-time-picker>
 This package uses MomentJS time format when it returns you the picked time. To learn more about available time formats you may visit : https://momentjs.com/
 
