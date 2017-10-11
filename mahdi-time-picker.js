@@ -67,9 +67,9 @@
 		'  </div>' +
 		'</div>';
 
-	function mahdipicker(angular) {
-		angular.module('mahdipicker', [])
-			.directive('myDirective', function (moment) {
+	function mahdiTimePicker(angular) {
+		angular.module('mahdiTimePicker', [])
+			.directive('mahdiTimePicker', function (moment) {
 				return {
 					restrict: 'AE',
 					scope: {
@@ -89,5 +89,5 @@
 		return 'mahdipicker';
 	}
 	//Load the picker
-	mahdipicker(angular);
+	mahdiTimePicker(angular);
 })();
