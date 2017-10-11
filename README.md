@@ -5,12 +5,16 @@ Angular JS Time Picker that loads inline of the page rather than modal. It is li
 Angular JS<br>
 Moment JS
 ## INSTALLATION
-Installing thi time picker is very easy. Just you need bower installed in your project. Then install it using bower like this:<br> 
-> `yourProjectDirectory> bower install mahdi-time-picker [--save]`
+Installing thi time picker is very easy. Just you need bower installed in your project. Then install it using bower like this: 
+
+> yourProjectDirectory> bower install mahdi-time-picker [--save]
+
 <br>After installing the package you need to insert the mahdi-time-picker.js file from the installed package inside your page like this: <br>
-> <script src=".../mahdi-time-picker/mahdi-time-picker.js"></script><br>
+> <script src=".../mahdi-time-picker/mahdi-time-picker.js"></script>
+
 After loading the script you have to include the module name "mahdiTimePicker" in your app's module list like this:<br>
-> angular.module('yourApp',['mahdiTimePicker']);
+> angular.module('yourApp',['mahdiTimePicker'])
+
 N.B. The file must be linked after the link of Angular and Moment scripts.
 
 ## Usage
@@ -21,7 +25,7 @@ After selecting the time you need to Click on Change button. Selected time will 
 
 ## Option
 You may pass the parameter for your desired time format e.g.- hours/minutes/seconds, hours/minutes AM , etc using time-format attribute like this:<br>
-> <mahdi-time-picker ng-model="returnedTime" time-format="'hh:mm A'"></mahdi-time-picker><br>
+> <mahdi-time-picker ng-model="returnedTime" time-format="'hh:mm A'"></mahdi-time-picker>
 This package uses MomentJS time format when it returns you the picked time. To learn more about available time formats you may visit : https://momentjs.com/
 
 ## Credits
