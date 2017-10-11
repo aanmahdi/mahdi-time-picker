@@ -10,7 +10,11 @@
 	'use strict';
 
 	//Picker Template
-	var template = '<div style="width:120px;position:relative;">' +
+	var template = '<style>' +
+    '.timepop{position: absolute;box-shadow: 0 1px 3px rgba(0,0,0,.5);background: #fff;border-radius: 4px;padding: 0 10px;z-index: 999;top: 100%;right: 0;}\n' +
+    '.timepop input[type=tel]{max-width: 35px!important;min-width: 35px;width: 35px;height: 35px;text-align: center;margin: auto;box-shadow: 0 0 10px rgba(0,0,0,.3) inset;}\n'+
+    '</style>' +
+    '<div style="width:120px;position:relative;">' +
 		'' +
 		'  <input style="min-width:90px;width:60px;float:left;" type="text" readonly ng-model="updatedTimeFormatted"/>' +
 		'' +
