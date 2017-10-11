@@ -8,7 +8,8 @@ Moment JS
 Installing thie time picker is very easy. Just you need bower installed in your project. <br> yourProjectDirectory> bower install mahdi-time-picker [--save] <br>
 <br>After installing the package you need to insert the mahdi-time-picker.js file inside your page like this: <br>
 <script src=".../mahdi-time-picker/mahdi-time-picker.js"></script><br>
-
+After loading the script you have include the module name "mahdiTimePicker" in your app's module list like this:<br>
+angular.module('yourApp',['mahdiTimePicker']);<br>
 N.B. The file must be linked after the link of Angular and Moment scripts.
 
 ## Usage
