@@ -86,7 +86,7 @@
 					}
 				};
 			});
-		return 'mahdipicker';
+		return 'mahdiTimePicker';
 	}
 	//Load the picker
 	mahdiTimePicker(angular);
