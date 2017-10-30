@@ -12,13 +12,11 @@
   //Picker Template
   var template = '<style>' +
     '.timepop{position: absolute;box-shadow: 0 1px 3px rgba(0,0,0,.5);background: #fff;border-radius: 4px;padding: 0 10px;z-index: 999;top: 100%;right: 0;}\n' +
-    '.timepop input[type=tel]{max-width: 35px!important;min-width: 35px;width: 35px;height: 35px;text-align: center;margin: auto;box-shadow: 0 0 10px rgba(0,0,0,.3) inset;}\n' +
+    '.timepop input[type=tel]{text-align:center;max-width: 35px!important;min-width: 35px;width: 35px;height: 30px;text-align: center;margin: auto;box-shadow: 0 0 10px rgba(0,0,0,.3) inset;}\n' +
     '</style>' +
     '<div style="width:120px;position:relative;">' +
     '' +
-    '  <input style="min-width:90px;width:60px;float:left;" type="text" readonly ng-model="updatedTimeFormatted"/>' +
-    '' +
-    '  <md-icon style="float:left;padding-left:5px;" md-font-icon="icon-clock" ng-click="showPicker=!showPicker"></md-icon>' +
+    '  <input style="min-width:90px;width:60px;float:left;" type="text" readonly ng-model="updatedTimeFormatted" ng-click="disable?\'\':showPicker=!showPicker" ng-disabled="disable"/>' +
     '  <div style="clear: both;"></div>' +
     '  <div ng-show="showPicker" class="timepop" layout="row" layout-align="space-around stretch">' +
     '    <div layout="column">' +
@@ -53,7 +51,7 @@
     '          <md-icon md-font-icon="icon-chevron-up"></md-icon>' +
     '        </md-button>' +
     '      </div>' +
-    '      <div flex align="center"><input type="text" style="width:40px;height:40px;" value="AM" ng-model="gmt" readonly/></div>' +
+    '      <div flex align="center"><input type="tel" style="width:40px;height:40px;" value="AM" ng-model="gmt" readonly/></div>' +
     '      <div flex>' +
     '        <md-button class="md-icon-button" ng-click="gmt===\'PM\'?gmt=\'AM\':gmt=\'PM\'">' +
     '          <md-icon md-font-icon="icon-chevron-down"></md-icon>' +
@@ -79,7 +77,8 @@
           scope: {
             timeFormat: '=',
             updatedTime: '=ngModel',
-            initDate: '='
+            initDate: '=',
+            disable:'=ngDisabled'
           },
           template: template,
           link: function (scope) {
